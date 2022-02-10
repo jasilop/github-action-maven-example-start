@@ -28,7 +28,7 @@ jobs:
     - name: Build project with Maven
       run: mvn -B package --file pom.xml  
     - name: tomcat deploy
-      run: curl -v -u tomcat:123@#admin -T 	/home/runner/work/github-action-maven-example-start/github-action-maven-example-start/target/github-action-maven-tutorial-1.0-SNAPSHOT-jar-with-dependencies.jar http://13.126.231.171:8080/manager/text/deploy?path=tutorial
+      run: curl -v -u tomcat:123@#admin -T 	/home/runner/work/github-action-maven-example-start/github-action-maven-example-start/target/github-action-maven-tutorial-1.0-SNAPSHOT-jar-with-dependencies.jar http://13.126.231.171:8080/manager/deploy?path=tutorial
     
     
     
